@@ -26,7 +26,7 @@ const misstionMock = [
 
 export const AboutUs = () => {
   return (
-    <div className='p-[73px] bg-[#FAFAFA]'>
+    <div className='p-[30px] md:p-[73px] bg-[#FAFAFA]'>
       <h1 className='text-5xl font-[500] text-[#0A0A0A] mb-[73px]'>About Us</h1>
       <div className='flex flex-col items-start gap-[45px]'>
         <p className='font-normal text-[#0A0A0A] text-[20px] px-[7px]'>
@@ -44,7 +44,7 @@ export const AboutUs = () => {
         {misstionMock.map((item, index) => {
           return (
             <div key={index} className='flex flex-col gap-[45px] w-full'>
-              <div className='md:px-[30px] flex gap-[59px] items-start lg:items-center'>
+              <div className='md:px-[30px] flex gap-[59px] flex-col md:flex-row items-center'>
                 <div className='w-[56px] h-[56px] flex justify-center items-center shrink-0 grow-0'>
                   <Image
                     src={item.url}
