@@ -3,7 +3,7 @@ import Image from 'next/image';
 export const NavbarSection = () => {
   return (
     <section
-      className='h-[400px] sm:h-[500px] md:h-[749px] bg-no-repeat bg-top bg-contain xl:bg-cover'
+      className='min-h-[500px] md:h-[600px] lg:h-[749px] bg-no-repeat max-sm:bg-cover bg-contain xl:bg-cover'
       style={{
         backgroundImage: `url('/assets/images/headBlue.png')`,
         backgroundPosition: 'top center',
@@ -14,9 +14,9 @@ export const NavbarSection = () => {
           <Image
             src='/assets/images/Logo_5 1.png'
             alt='logo'
-            width={270.35}
-            height={73}
-            className='object-cover'
+            width={100}
+            height={100}
+            className='object-cover w-[200px] sm:w-[270.35px] h-[50px] sm:h-[73px]'
             priority
           />
           <div className='flex items-center gap-4'>
@@ -30,11 +30,11 @@ export const NavbarSection = () => {
             </button>
           </div>
         </div>
-        <div className='flex flex-col items-center justify-center text-center lg:mt-20 md:mt-10 mt-5 max-w-[1092px] mx-auto'>
+        <div className='flex flex-col items-center justify-center text-center lg:mt-20 mt-13 max-w-[1092px] mx-auto'>
           <h1 className='text-white text-[22px] sm:text-[40px] md:text-[80px] font-bold mb-4 tracking-tighter'>
             WELCOME TO
           </h1>
-          <h2 className='text-white text-2xl sm:text-2xl md:text-4xl lg:text-7xl font-semibold tracking-wide leading-16'>
+          <h2 className='text-white text-2xl sm:text-3xl md:text-4xl lg:text-5xl min-[641px]:max-[1150px]:text-7xl font-semibold tracking-wide leading-tight'>
             Integrated Export Gateway of Mongolian Culture and Heritage
           </h2>
         </div>

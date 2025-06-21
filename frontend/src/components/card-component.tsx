@@ -37,7 +37,6 @@ export const CardComponent = () => {
               backgroundPosition: 'center',
             }}
           >
-            {/* Logo that appears on hover */}
             <div className='absolute z-30 opacity-0 left-0 bottom-0 group-hover:opacity-100 transition-opacity duration-300'>
               <Image
                 src='/assets/images/Logo_1 1.png'
@@ -48,7 +47,6 @@ export const CardComponent = () => {
               />
             </div>
 
-            {/* Color overlay */}
             <div
               className='absolute inset-0 rounded-[20px]'
               style={{
@@ -57,7 +55,6 @@ export const CardComponent = () => {
               }}
             />
 
-            {/* Text content */}
             <div className='relative z-10 text-center px-4 w-64'>
               <h3 className='font-bold text-[32px] leading-tight'>
                 {card.title}
